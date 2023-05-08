@@ -21,6 +21,7 @@ mongoose
 //create
 app.post(config.server.baseUrl + "/registerUser", useUserCtl.registerUser)
 app.post(config.server.baseUrl + "/login", useUserCtl.login)
+app.post(config.server.baseUrl + "/auth", useUserCtl.authorization)
 
 
 export default app;
